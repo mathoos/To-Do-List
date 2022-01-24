@@ -31,14 +31,15 @@ function createListElement(){
     // Rajouter le bouton pour suprimmer une tâche
 
     var dBtn = document.createElement("button");
-    dBtn.appendChild(document.createTextNode("X"));
+    dBtn.appendChild(document.createTextNode("x"));
     li.appendChild(dBtn);
     dBtn.addEventListener("click", deleteListItem);
 
     // Créer la fonction pour supprimer la tâche 
 
     function deleteListItem(){
-        li.classList.add("delete")
+        li.classList.add("delete");
+        dBtn.classList.add("delete")
     }
 }
 
